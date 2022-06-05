@@ -1,0 +1,42 @@
+
+
+@mixin baseButton ($color) {
+
+    width: 9.5rem;
+    height: 4rem;
+    border-radius: .5rem;
+    border: none;
+    background: $color;
+    color: white;
+    
+}
+
+$blueButton: rgb(48, 89, 224);
+
+.header{
+
+
+
+    &__btn-stop{
+
+        @include baseButton(rgb(212, 7, 7))
+
+    }
+
+    &__btn-new-card{
+
+        @include baseButton($blueButton)
+
+    }
+
+    &__btn-new-game{
+
+        @include baseButton($blueButton)
+
+    }
+
+}
+
+.modal-btn{
+    @include baseButton($blueButton)
+}
